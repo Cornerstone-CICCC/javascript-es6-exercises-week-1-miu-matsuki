@@ -15,3 +15,28 @@ Use the eatsPlants and eatsAnimals variables to test your code.
 
 If eatsPlants equals true and eatsAnimals equals false, then herbivore should be printed to the console. 
 */
+
+
+let eatsPlants = false;
+let eatsAnimals = true;
+
+let type = eatsPlants && eatsAnimals ? "omnivore"
+: eatsPlants ? "herbivore"
+: eatsAnimals ? "carnivore"
+: "undefined"
+
+console.log(type);
+
+
+// let eatsPlants = false;
+// let eatsAnimals = false;
+
+// function animalType(isPlants, isAnimal){
+//   if(isPlants && !isAnimal) return "herbivore";
+//   if(!isPlants && isAnimal) return "carnivore";
+//   if(isPlants && isAnimal) return "omnivore";
+//   if(!isPlants && !isAnimal) return "undefined";
+// }
+
+// console.log(animalType(true,false))
+
