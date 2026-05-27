@@ -21,3 +21,34 @@ In 2015, a person with a Bachelor's degree earned an average of $59,124/year.
 TIP: To print out the average salary with commas (i.e. 59,124), use the toLocaleString() method and pass it the locale "en-US". For example, salary.toLocaleString("en-US"). 
 
 */
+
+
+const diploma = "Doctoral";
+let aveOfSalary = 0;
+
+switch(diploma){
+  case "no high school":
+    aveOfSalary = 25636;
+    break;
+  case "high school":
+    aveOfSalary = 35256;
+    break;
+  case "Associate":
+    aveOfSalary = 41496;
+    break;
+  case "Bachelor":
+    aveOfSalary = 59124;
+    break;
+  case "Master":
+    aveOfSalary = 69732;
+    break;
+  case "Professional":
+    aveOfSalary = 89960;
+    break;
+  case "Doctoral":
+    aveOfSalary = 84396;
+    break;
+}
+
+console.log(`In 2015, a person with ${diploma} earned an average of $${aveOfSalary.toLocaleString("en-US")}/year.`)
+
