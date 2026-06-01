@@ -11,3 +11,14 @@ Remove "Blackberry"
 Add "Yellow" and "Green"
 Add "Purple"
 */
+
+
+//var rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
+
+
+var rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+rainbow.splice(2,1,"Yellow", "Green");
+
+console.log(rainbow);
+rainbow.splice(5,0,"Purple");
+console.log(rainbow);
