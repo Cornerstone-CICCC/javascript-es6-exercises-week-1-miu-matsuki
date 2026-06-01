@@ -35,3 +35,18 @@ function makeLine(length) {
     }
     return line + "\n";
 }
+
+//⭐⭐⭐
+function buildTriangle(width) {
+  let triangle = ""; 
+
+  for (let i = 1; i <= width; i++) {
+    triangle += makeLine(i); 
+  }
+
+  return console.log(triangle);
+}
+
+
+buildTriangle(3);
+
